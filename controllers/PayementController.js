@@ -34,7 +34,7 @@ export const paymentVerification=async(req,res)=>{
       razorpay_order_id,razorpay_payment_id,razorpay_signature
   })
 
-    res.redirect(`http://localhost:5173/paymentSuccess/?${razorpay_payment_id}`)
+    res.redirect(`https://razorpayreact.netlify.app/paymentSuccess/?${razorpay_payment_id}`)
 
   }else{
     
